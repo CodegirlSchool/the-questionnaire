@@ -4,9 +4,6 @@ form.addEventListener("submit", async (event) => {
 
   event.preventDefault();
 
-
-
-
   try {
 
     const response = await fetch("https://github.com/", {
