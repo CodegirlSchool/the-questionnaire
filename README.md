@@ -18,18 +18,18 @@
 
 Пример запроса на сервер:
 ```js
-fetch(`https://polinashneider.space/user`, {
+fetch(`https://github.com/MarinaTalochka`, {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer: PolinaShneider'
+      'Authorization': 'Bearer: MarinaTalochka'
     },
     body: JSON.stringify({
-      "name": "Полина",
-      "secondName": "Shneider",
-      "phone": 89990000000,
-      "email": "polina@gmail.com",
+      "name": "Марина",
+      "secondName": "Толочко",
+      "phone": 80336555250,
+      "email": "marina.tolochko.1990@mail.ru",
       "agree": true
     }),
 })
