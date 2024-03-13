@@ -4,5 +4,5 @@ form.addEventListener("submit", (event) => {
   // https://learn.javascript.ru/default-browser-action
   event.preventDefault();
 
-  // Здесь твой код
+  
 });
