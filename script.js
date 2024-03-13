@@ -6,12 +6,12 @@ form.addEventListener("submit", async (event) => {
 
   try {
 
-    const response = await fetch("https://github.com/", {
+    const response = await fetch("https://polinashneider.space/user", {
       method: "POST",
       headers: {
         "Accept": "application/json",
         "Content-Type": "application/json",
-        "Authorization": "Bearer MarinaTalochka"
+        "Authorization": "Bearer: MarinaTalochka"
       },
       body: JSON.stringify({
         "name": "Марина",
