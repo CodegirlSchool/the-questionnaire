@@ -23,7 +23,6 @@ form.addEventListener("submit", async (event) => {
     });
 
     if (response.ok) {
-
       alert("Данные успешно отправлены!");
       form.reset();
     } else {
