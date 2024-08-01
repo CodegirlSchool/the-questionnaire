@@ -10,7 +10,6 @@ const phone = document.querySelector("#phone");
 const email = document.querySelector("#email");
 const agree = document.querySelector("#agree");
 
-
   fetch("https://polinashneider.space/user", {
     method: 'POST',
     headers: {
