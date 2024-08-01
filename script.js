@@ -38,3 +38,5 @@ const agree = document.querySelector("#agree");
     alert('произошла ошибка');
   })
 })
+
+console.log(phone);
