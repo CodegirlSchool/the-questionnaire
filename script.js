@@ -4,35 +4,42 @@ form.addEventListener("submit", (event) => {
   // https://learn.javascript.ru/default-browser-action
   event.preventDefault();
 
-const sendButton = document.querySelector('#button');
-const clearButton = document.querySelector('#clear');
+const name = document.querySelector("#name");
+const secondName = document.querySelector("#secondName");
+const phone = document.querySelector("#phone");
+const email = document.querySelector("#email");
+const agree = document.querySelector("#agree");
 
-sendButton.addEventListener('click', () => {
-  fetch(`https://polinashneider.space/user`, {
+
+  fetch("https://polinashneider.space/user", {
     method: 'POST',
     headers: {
       'Accept': 'application/json',
       'Content-Type': 'application/json',
-      'Authorization': 'Bearer: PolinaShneider'
+      'Authorization': 'Bearer: Alexandrovna7'
     },
     body: JSON.stringify({
-      "name": "Полина",
-      "secondName": "Shneider",
-      "phone": 89990000000,
-      "email": "polina@gmail.com",
-      "agree": true
+      name: name.value,
+      secondName: secondName.value,
+      phone: phone.value,
+      email: email.value,
+      agree: agree.checked
     }),
 })
-  .then((result) => {
-    console.log(result);
+  .then((data) => {
+    return data.JSON();
   })
   .then((data) => {
-    console.log(data);
+    if(data.message) {
+      alert(data.message);
+    }
+    form.reset()
   })
   .catch((error) => {
-    console.log(error);
+    alert('произошла ошибка');
   })
 })
+
   
-});
+
 
