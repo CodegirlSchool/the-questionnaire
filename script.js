@@ -39,7 +39,3 @@ const agree = document.querySelector("#agree");
     alert('произошла ошибка');
   })
 })
-
-  
-
-
