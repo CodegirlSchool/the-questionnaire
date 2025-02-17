@@ -33,7 +33,7 @@ fetch(`https://polinashneider.space/user`, {
       "agree": true
     }),
 })
-```
+
 
 Чтобы сервер понял, кто ты, укажи в заголовке авторизации свой nickname с GitHub. 
 
